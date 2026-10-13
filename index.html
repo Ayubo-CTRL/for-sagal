@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Sagal</title>
+  <meta name="description" content="Something I've been meaning to tell you.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reusable heart shape: <svg class="heart"><use href="#heart"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="heart" viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </symbol>
+  </svg>
+
+  <!-- Floating hearts get injected here by js/main.js -->
+  <div class="hearts-bg" id="hearts-bg" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-small">I've been meaning to say something</p>
+      <h1 class="hero-name">
+        Sagal
+        <svg class="heart heart-beat" aria-hidden="true"><use href="#heart"/></svg>
+      </h1>
+      <p class="hero-sub">This one's for you. Scroll slowly.</p>
+      <a class="hero-scroll" href="#letter" aria-label="Scroll down to the letter">
+        <svg class="heart" aria-hidden="true"><use href="#heart"/></svg>
+      </a>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section letter" id="letter">
+      <div class="hearts-row" aria-hidden="true">
+        <svg class="heart"><use href="#heart"/></svg>
+        <svg class="heart"><use href="#heart"/></svg>
+        <svg class="heart"><use href="#heart"/></svg>
+      </div>
+
+      <!-- EDIT ME: change this text to say it in your own words -->
+      <h2>We've known each other for years.</h2>
+      <p>
+        Then I went quiet, and that was my fault. I'm sorry for the silence and for
+        making you wonder where I went. I never stopped thinking about you.
+      </p>
+      <p>
+        You've always been one of the people who made my life feel lighter. I'd
+        rather tell you how I feel than keep guessing for another year.
+      </p>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section photos" aria-labelledby="photos-title">
+      <h2 id="photos-title" class="visually-hidden">Photos of Sagal</h2>
+
+      <div class="photo-grid">
+
+        <!-- PHOTO 1: save your picture as images/sagal-1.jpg -->
+        <figure class="photo-card">
+          <div class="frame">
+            <span class="frame-placeholder">
+              <svg class="heart" aria-hidden="true"><use href="#heart"/></svg>
+              Add photo<br><code>images/sagal-1.jpg</code>
+            </span>
+            <img src="images/sagal-1.jpg" alt="Sagal" onerror="this.remove()">
+          </div>
+          <figcaption>
+            <h3>Your curls</h3>
+            <p>Dark, soft, and somehow always perfect. I notice them even when I'm pretending not to.</p>
+          </figcaption>
+        </figure>
+
+        <!-- PHOTO 2: save your picture as images/sagal-2.jpg -->
+        <figure class="photo-card">
+          <div class="frame">
+            <span class="frame-placeholder">
+              <svg class="heart" aria-hidden="true"><use href="#heart"/></svg>
+              Add photo<br><code>images/sagal-2.jpg</code>
+            </span>
+            <img src="images/sagal-2.jpg" alt="Sagal" onerror="this.remove()">
+          </div>
+          <figcaption>
+            <h3>Your eyes</h3>
+            <p>Soulful is the only word that fits. You look at people like you really see them.</p>
+          </figcaption>
+        </figure>
+
+        <!-- PHOTO 3: save your picture as images/sagal-3.jpg -->
+        <figure class="photo-card">
+          <div class="frame">
+            <span class="frame-placeholder">
+              <svg class="heart" aria-hidden="true"><use href="#heart"/></svg>
+              Add photo<br><code>images/sagal-3.jpg</code>
+            </span>
+            <img src="images/sagal-3.jpg" alt="Sagal" onerror="this.remove()">
+          </div>
+          <figcaption>
+            <h3>All of you</h3>
+            <p>Beautiful in the loud way and the quiet way. And so cute when you're laughing at something small.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- TERMINAL -->
+    <section class="section terminal-section" id="terminal">
+      <h2>The part where I say it in code</h2>
+      <p class="section-note">(I'm a software engineering student. Let me have this one.)</p>
+
+      <div class="terminal" role="img" aria-label="A terminal window where Ayub types messages telling Sagal he loves and supports her">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">ayub@for-sagal: ~</span>
+          <button class="terminal-replay" id="replay" type="button">replay</button>
+        </div>
+        <div class="terminal-body" id="terminal-body" aria-live="off">
+          <noscript>
+            <p>i love you, Sagal. i'm proud of you. i'm always on your side.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section closing">
+      <div class="hearts-row" aria-hidden="true">
+        <svg class="heart"><use href="#heart"/></svg>
+        <svg class="heart"><use href="#heart"/></svg>
+        <svg class="heart"><use href="#heart"/></svg>
+      </div>
+
+      <h2>No pressure. Just honesty.</h2>
+      <p>
+        You don't owe me an answer. I just didn't want you to go another day not
+        knowing how much you mean to me.
+      </p>
+
+      <button class="love-btn" id="love-btn" type="button">
+        <svg class="heart" aria-hidden="true"><use href="#heart"/></svg>
+        Tap if you read this far
+      </button>
+
+      <p class="love-reply" id="love-reply" hidden>
+        Thank you for reading. Whatever you feel, I'm grateful you exist in my life.
+      </p>
+
+      <p class="signoff">Always yours,<br><span>Ayub</span></p>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
